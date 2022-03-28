@@ -1,4 +1,8 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/yfa6ew5ajb5snd9d/branch/master?svg=true)](https://ci.appveyor.com/project/Sergius92739/ra-2-2-events-state-layouts/branch/master)
+
 # Расположение товаров
+
+### Deployment:  <a href="">Github Pages</a>
 
 ---
 
