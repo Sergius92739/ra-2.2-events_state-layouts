@@ -1,0 +1,116 @@
+@import "vars.scss";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 350px;
+  grid-column-gap: 5em;
+  grid-row-gap: 2em;
+  &.list {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 0;
+    grid-row-gap: 0.2em;
+    .card {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 0 1em;
+      box-shadow: none;
+      .card__image {
+        width: 120px;
+        height: 70px;
+        img {
+          width: 100%;
+          height: auto;
+          margin-top: -35px;
+        }
+      }
+      .card__title,
+      .card__price {
+        text-align: left;
+        align-self: center;
+      }
+      .card__description,
+      .card__price {
+        text-align: center;
+        align-self: center;
+      }
+      .card__button {
+        text-align: right;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.switcher {
+  width: 85%;
+  margin: 1.5em auto 2em;
+  text-align: right;
+  .material-icons {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1540px) {
+  .container {
+    width: 61%;
+  }
+  .switcher {
+    width: 65%;
+  }
+}
+
+.card {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  text-align: center;
+  border-radius: 0.3em;
+  box-shadow: 0 10px 20px rgb(110, 110, 110);
+  position: relative;
+  .card__header {
+    .card__description {
+      margin-top: 1.5em;
+    }
+  }
+  .card__image {
+    height: 190px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: -65px;
+    }
+  }
+  .card__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .card__footer {
+    color: $danger-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card__price,
+  .button {
+    color: $danger-color;
+    font-weight: bold;
+  }
+  .card__price {
+    font-size: 1.3rem;
+  }
+  .button {
+    background-color: #fff;
+    padding: 0.5em 1em;
+    border: 1px solid $danger-color;
+    border-radius: 17px;
+  }
+}
