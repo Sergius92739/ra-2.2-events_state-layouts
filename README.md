@@ -2,7 +2,7 @@
 
 # Расположение товаров
 
-### Deployment:  <a href="">Github Pages</a>
+### Deployment:  <a href="https://sergius92739.github.io/ra-2.2-events_state-layouts/">Github Pages</a>
 
 ---
 
